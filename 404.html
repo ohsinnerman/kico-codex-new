@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#472913">
+  <title>Page not found | KiCo</title>
+  <script>
+    window.KICO_ROOT = location.hostname.endsWith('.github.io') ? '/kico-codex-new/' : '/';
+    document.write('<link rel="stylesheet" href="' + window.KICO_ROOT + 'assets/css/site.css">');
+  </script>
+  <noscript><style>body{background:#472913;color:#e4e0cf;font:18px/1.6 Georgia,serif;margin:0;padding:2rem}a{color:#f4f0df}h1{font-size:clamp(2.5rem,8vw,5rem);line-height:1.05}</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="site-header__inner shell"><a class="brand" id="home-brand" href="/kico-codex-new/" aria-label="KiCo home"><span class="brand-name">KiCo</span><span class="brand-tagline">India’s Kitaab Copy</span></a><a class="button button--small" href="https://wa.link/j4caj6" target="_blank" rel="noopener noreferrer">Enroll</a></div></header>
+  <main id="main" class="shell legal-page">
+    <section class="legal-sheet" aria-labelledby="not-found-title">
+      <h1 class="section-title" id="not-found-title">This page is missing</h1>
+      <p class="legal-intro">The link may have moved. Return to KiCo’s course page to find the syllabus, course details and contact options.</p>
+      <a class="button" id="home-link" href="/kico-codex-new/">Back to the course</a>
+    </section>
+  </main>
+  <script>
+    document.getElementById('home-brand').href = window.KICO_ROOT;
+    document.getElementById('home-link').href = window.KICO_ROOT;
+    const siteScript = document.createElement('script');
+    siteScript.src = window.KICO_ROOT + 'assets/js/site.js';
+    document.body.appendChild(siteScript);
+  </script>
+</body>
+</html>
